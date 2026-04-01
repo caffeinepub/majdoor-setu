@@ -1,0 +1,78 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+
+    /* Navy #123B66 → oklch(0.30 0.077 250) */
+    /* Orange #F08A24 → oklch(0.70 0.16 55) */
+    /* Off-white #F6F7F9 → oklch(0.974 0.004 247) */
+    /* Near-black #111827 → oklch(0.155 0.012 251) */
+    /* Muted gray #6B7280 → oklch(0.52 0.012 255) */
+    /* Border gray #E5E7EB → oklch(0.918 0.006 255) */
+    /* Golden yellow #F5B301 → oklch(0.79 0.162 76) */
+    /* Footer charcoal #1F2937 → oklch(0.22 0.015 254) */
+
+    --background: 0.974 0.004 247;
+    --foreground: 0.155 0.012 251;
+    --card: 1 0 0;
+    --card-foreground: 0.155 0.012 251;
+    --popover: 1 0 0;
+    --popover-foreground: 0.155 0.012 251;
+    --primary: 0.7 0.16 55;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.3 0.077 250;
+    --secondary-foreground: 1 0 0;
+    --muted: 0.95 0.005 250;
+    --muted-foreground: 0.52 0.012 255;
+    --accent: 0.79 0.162 76;
+    --accent-foreground: 0.155 0.012 251;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.918 0.006 255;
+    --input: 0.918 0.006 255;
+    --ring: 0.7 0.16 55;
+    --navy: 0.3 0.077 250;
+    --navy-dark: 0.22 0.015 254;
+    --orange: 0.7 0.16 55;
+    --gold: 0.79 0.162 76;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.3 0.077 250;
+    --sidebar-foreground: 1 0 0;
+    --sidebar-primary: 0.7 0.16 55;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.38 0.08 250;
+    --sidebar-accent-foreground: 1 0 0;
+    --sidebar-border: 0.4 0.08 250;
+    --sidebar-ring: 0.7 0.16 55;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Hind", "Hind Devanagari", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Hind", "Hind Devanagari", sans-serif;
+    font-weight: 700;
+  }
+}
